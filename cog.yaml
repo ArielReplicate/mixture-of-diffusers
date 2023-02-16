@@ -1,0 +1,18 @@
+build:
+  gpu: true
+  cuda: "11.3"
+  python_version: 3.8
+  system_packages:
+    - libgl1-mesa-glx
+    - libglib2.0-0
+  python_packages:
+    - diffusers==0.7.*
+    - scipy==1.10.*
+    - ftfy==6.1.*
+    - gitpython==3.1.*
+    - ligo-segments==1.4.*
+    - torchvision==0.14.*
+    - transformers==4.21.*
+    - accelerate==0.16.0
+
+predict: "predict.py:Predictor"
